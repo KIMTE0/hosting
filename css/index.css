@@ -1,0 +1,25 @@
+/* 인라인 블록요소로 크기 조절 및 선택 영역 글씨두께 두껍게 */
+a {
+    display: inline-block;
+    background-color: gray;
+    width: 2em;
+    line-height: 2em;
+    text-decoration: none;
+    font-weight: bold;
+    color: purple;
+}
+
+/* 지정 value "#"가 포함되는 href 속성 값을 가진 a요소 말고 -> 비선택 영역 투명도 50%, 글씨두께 기본 */
+a:not(a[href="#"]) {
+    opacity: 50%;
+    font-weight: normal;
+}
+
+div {
+    text-align: center;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+}
